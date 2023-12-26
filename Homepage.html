@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix CLone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="Homepage.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="navbar flex" id="navbar">
+                <div class="left-nav flex">
+                    <ul class="flex menu">
+                        <li>Home</li>
+                        <li>TV Show</li>
+                        <li>Movies</li>
+                        <li>New & Popular</li>
+                        <li>My List</li>
+                    </ul>
+                </div>
+                <div class="right-nav flex">
+                    <span class="fa fa-search fa" aria-hidden="true">
+                        <p>Children</p>
+                    </span>
+                    <span class="fa fa-bell-o fa" aria-hidden="true"></span>
+                    <img src="chimpanzee.jpeg" alt="">
+                    <span class="fa fa-caret-down fa" aria-hidden="true"></span>
+                </div>
+            </div>
+            <span class="togglebtn" onclick="toggle()">&#9776</span>
+        </div>
+        <div class="inner">
+            <div class="banner flex">
+                <h3>Marvel's Studio's</h3>
+                <h1>Avengers : End Game</h1>
+                <div class="banner-button flex">
+                    <button class="btn"><span class="fa fa-play play" aria-hidden="true"></span>Play</button>
+                    <button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true"></span>More Info</button>
+                </div>
+            </div>
+
+            <div class="carousel">
+                <h3>New Release</h3>
+                <div class="carousel-slider">
+                    <div class="carousel-list">
+                        <div class="carousel-item">
+                            <img src="Avenger.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Batman.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="captain-america.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="deadpool.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="dr-strange.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="g-o-t-g.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="iron-man.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="thor.jpeg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="venam.jpeg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="color-overlay"></div>
+        <video autoplay loop muted>
+            <source src="end-game.mp4">
+        </video>
+    </div>
+    <script src="Homepage.js"></script>
+</body>
+</html>
